@@ -26,7 +26,6 @@ export default defineRouter(function () {
   Router.beforeEach((to, from, next) => {
     const authStore = useAuthStore()
     if (to.meta.requiresAuth && !authStore.isAuthenticated) {
-      Notify.create({ type: 'warning', message: 'กรุณา Login ก่อน' })
       next({ name: 'login' })
     } else if (to.meta.roles && !to.meta.roles.includes(authStore.role)) {
       // หน้า Admin
