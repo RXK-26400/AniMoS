@@ -21,7 +21,7 @@
         </q-banner>
 
         <q-banner class="bg-blue-1 q-mt-md" rounded dense>
-          Demo Account (Password: <b>123456</b>)<br>Username: <b>student</b> / <b>teacher</b> / <b>admin</b>
+          Username: <b>student</b> / <b>teacher</b> / <b>admin</b><br>Password: <b>123456</b>
         </q-banner>
 
         <q-btn color="primary" label="Login" class="full-width q-mt-lg" size="lg" unelevated
