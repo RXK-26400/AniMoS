@@ -130,8 +130,8 @@ onMounted(() => store.fetchAll())
 .poster-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; }
 .poster-card { background: #343b4d; display: flex; flex-direction: column; }
 .poster-title { padding: 8px 12px; text-align: center; font-size: 1.15rem; background: #343b4d; }
-.poster-img { aspect-ratio: 347 / 427; background: #cbd2dc; }
-.poster-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.poster-img { position: relative; aspect-ratio: 347 / 427; overflow: hidden; background: #cbd2dc; }
+.poster-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 .clickable { cursor: pointer; }
 .hover-delete:hover { outline: 3px solid #e5533a; }
